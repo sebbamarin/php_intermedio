@@ -1,0 +1,48 @@
+{
+   "benefits": [
+      {
+         "name": "Nike",
+         "code": "nik"
+      },
+      {
+         "name": "Adidas",
+         "code": "adi"
+      },
+      {
+         "name": "Puma",
+         "code": "pum"
+      },
+      {
+         "name": "Reebok",
+         "code": "reb"
+      },
+      {
+         "name": "Asics",
+         "code": "asic"
+      },
+      {
+         "name": "New Balance",
+         "code": "new"
+      },
+      {
+         "name": "Vans",
+         "code": "van"
+      },
+      {
+         "name": "Converse",
+         "code": "con"
+      },
+      {
+         "name": "Viking",
+         "code": "vik"
+      },
+      {
+         "name": "Under Armour",
+         "code": "und"
+      },
+      {
+         "name": "Other",
+         "code": "oth"
+      }
+   ]
+}
