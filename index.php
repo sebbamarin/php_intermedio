@@ -41,7 +41,7 @@ if (isset($_GET['id_complaint']) && isset($_SESSION['user_id'])) {
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
   <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700,900" rel="stylesheet">
-  <link rel="stylesheet" href="../assets/style.css">
+  <link rel="stylesheet" href="./assets/style.css">
 </head>
 
 <body>
@@ -50,7 +50,7 @@ if (isset($_GET['id_complaint']) && isset($_SESSION['user_id'])) {
     <?php
     if (isset($_SESSION['user_id']) && $_SESSION['user_rol'] == 1) { ?>
       <div class="container-fluid justify-content-end">
-        <a class="navbar-brand h1 text-light mb-0 me-4 me-sm-5" href="/admin/"><i class="bi bi-arrow-right"></i> Admin</a>
+        <a class="navbar-brand h1 text-light mb-0 me-4 me-sm-5" href="/php_intermedio/admin/"><i class="bi bi-arrow-right"></i> Admin</a>
       </div>
     <?php } else { ?>
       <div class="container-fluid">
@@ -136,7 +136,7 @@ if (isset($_GET['id_complaint']) && isset($_SESSION['user_id'])) {
     </form>
   </section>
 
-  <script src="../assets/main.js"></script>
+  <script src="./assets/main.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
 </body>
 

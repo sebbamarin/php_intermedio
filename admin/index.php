@@ -22,9 +22,9 @@ if (isset($_SESSION['user_id']) && $_SESSION['user_rol'] == 1) {
   $user_name = $_SESSION['user_name'];
   $user_email = $_SESSION['user_email'];
 } elseif (isset($_SESSION['user_id']) && $_SESSION['user_rol'] != 1) {
-  header('Location: /admin/login.php?error=user-permission');
+  header('Location: /php_intermedio/admin/login.php?error=user-permission');
 } else {
-  header('Location: /admin/login.php');
+  header('Location: /php_intermedio/admin/login.php');
 }
 ?>
 
@@ -145,7 +145,7 @@ if (isset($_SESSION['user_id']) && $_SESSION['user_rol'] == 1) {
       </select>
       <div class="d-flex gap-2">
         <button type="button" id="btn_filter" class="btn btn-primary" disabled onclick="filter_list()">Filter</button>
-        <button type="button" class="btn btn-dark" onclick="window.location.href = '/admin/'">Clear</button>
+        <button type="button" class="btn btn-dark" onclick="window.location.href = '/php_intermedio/admin/'">Clear</button>
       </div>
     </div>
     <!-- TABLE -->
@@ -191,7 +191,7 @@ if (isset($_SESSION['user_id']) && $_SESSION['user_rol'] == 1) {
                 <td><?= $r['attachment']; ?></td>
                 <td style="min-width: 160px;">
                   <?php if ($r['attachment'] != 'No') { ?>
-                    <button type="button" class="btn btn-primary text-uppercase" onclick="window.location.href = '/admin/download_attachment.php?path=<?= $r['attachment']; ?>'"><i class="bi bi-download"></i></button>
+                    <button type="button" class="btn btn-primary text-uppercase" onclick="window.location.href = '/php_intermedio/admin/download_attachment.php?path=<?= $r['attachment']; ?>'"><i class="bi bi-download"></i></button>
                   <?php } ?>
                   <button type="button" class="btn btn-warning text-uppercase" onclick="window.location.href = '/?id_complaint=<?= $r['id']; ?>'"><i class="bi bi-pencil-square"></i></button>
                   <button type="button" class="btn btn-danger text-uppercase" onclick="confirm('Do you want to delete the complaint?') ? window.location.href = '/db/delete.php/?id='+<?= $r['id']; ?>+'&object=complaints' : ''"><i class="bi bi-trash3-fill"></i></button>

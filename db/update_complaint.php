@@ -16,7 +16,7 @@ $upd_complaint['description'] = $res['description'];
 
 $res = $database->update($id, $upd_complaint, 'complaints');
 if ($res) {
-  header('Location: /admin/');
+  header('Location: /php_intermedio/admin/');
 } else {
-  header('Location: /admin/?error=update-state');
+  header('Location: /php_intermedio/admin/?error=update-state');
 }

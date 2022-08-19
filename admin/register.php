@@ -14,14 +14,14 @@ if (isset($_POST['submit-register'])) {
     if (!$user) {
       echo "<script>alert('Error creating user')</script>";
     } else {
-      header("Location: /admin/login.php?success=create-user");
+      header("Location: /php_intermedio/admin/login.php?success=create-user");
       exit();
     }
   }
 }
 
 if (isset($_SESSION['user_id'])) {
-  header("Location: /admin/");
+  header("Location: /php_intermedio/admin/");
   exit();
 }
 ?>
@@ -77,7 +77,7 @@ if (isset($_SESSION['user_id'])) {
 
       <p class="mt-4 text-muted">&copy; Monster Card – <?= date('d/m/Y') ?></p>
 
-      <a href="/admin/login.php" class="fw-semibold text-secondary text-decoration-none">Have you already registered? Enter here</a>
+      <a href="/php_intermedio/admin/login.php" class="fw-semibold text-secondary text-decoration-none">Have you already registered? Enter here</a>
     </form>
   </main>
 

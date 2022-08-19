@@ -5,7 +5,7 @@ $table = $_GET['object'];
 
 $res = $database->delete($id, $table);
 if ($res) {
-  header('Location: /admin/');
+  header('Location: /php_intermedio/admin/');
 } else {
-  header('Location: /admin/?error=delete-complaint');
+  header('Location: /php_intermedio/admin/?error=delete-complaint');
 }

@@ -5,7 +5,7 @@ require_once('../db/database.php');
 require_once('../db/errors.php');
 
 if (isset($_SESSION['user_id']) && $_SESSION['user_rol'] == 1) {
-  header("Location: /admin/");
+  header("Location: /php_intermedio/admin/");
   exit();
 }
 
@@ -23,7 +23,7 @@ if (isset($_POST['submit-login'])) {
       $_SESSION['user_name'] = $user['user_name'];
       $_SESSION['user_email'] = $user['user_email'];
       $_SESSION['user_rol'] = $user['user_rol'];
-      header("Location: /admin");
+      header("Location: /php_intermedio/admin");
       exit();
     }
   }
@@ -78,7 +78,7 @@ if (isset($_POST['submit-login'])) {
 
       <p class="mt-4 text-muted">&copy; MonsterCard – <?= date('d/m/Y') ?></p>
 
-      <a href="/admin/register.php" class="fw-semibold text-secondary text-decoration-none">You are not registered? Do it here</a>
+      <a href="/php_intermedio/admin/register.php" class="fw-semibold text-secondary text-decoration-none">You are not registered? Do it here</a>
     </form>
   </main>
 

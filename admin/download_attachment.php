@@ -1,7 +1,7 @@
 <?php
 session_start();
 if (!isset($_SESSION['user_id'])) {
-  header('Location: /admin/');
+  header('Location: /php_intermedio/admin/');
 }
 
 if(isset($_GET['path'])){
@@ -14,4 +14,4 @@ if(isset($_GET['path'])){
   }
 }
 
-header('Location: /admin/');
+header('Location: /php_intermedio/admin/');

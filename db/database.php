@@ -1,8 +1,14 @@
 <?php
-DEFINE('DB_USERNAME', 'root');
-DEFINE('DB_PWD', '');
-DEFINE('DB_HOST', 'localhost');
-DEFINE('DB_NAME', 'php_intermedio');
+
+ /*  DEFINE('DB_USERNAME', 'root');
+  DEFINE('DB_PWD', '');
+  DEFINE('DB_HOST', 'localhost');
+  DEFINE('DB_NAME', 'php_intermedio'); */
+
+  DEFINE('DB_USERNAME', 'c2061385_php_int');
+  DEFINE('DB_PWD', '50vaDUsagi');
+  DEFINE('DB_HOST', 'localhost');
+  DEFINE('DB_NAME', 'c2061385_php_int');
 
 // CLASS DB CONNECTION
 class Database
